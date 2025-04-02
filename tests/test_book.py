@@ -17,8 +17,12 @@ class TestBook(unittest.TestCase):
 
         book1 = Book(isbn="1234567890", publication_date=date(2023, 1, 1), title="Sample Title", author="Sample Author")
         book2 = Book(isbn="1234567890", publication_date=date(2023, 1, 1), title="Sample Title", author="Sample Author")
-        
+
         self.assertEqual(book1, book2)
+    # create a test fuction with incorect isbn number to check if it raises a value error
+    def test_invalid_isbn(self):
+        with self.assertRaises(ValueError):
+            Book(isbn="123456789", publication_date=date(2023, 1, 1), title="Sample Title", author="Sample Author")
 
 
 
