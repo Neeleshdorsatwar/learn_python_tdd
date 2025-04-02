@@ -6,12 +6,9 @@ class TestCalculator(unittest.TestCase):
 
     def setUp(self):
         self.calc = Calculator()
-        self.counter = self.counter + 1
-        print("Setup: Creating a new Calculator instance.", self.counter)
 
     def tearDown(self):
         self.calc = None
-        print("Teardown: Destroying the Calculator instance.")
 
     def test_add(self):
         result = self.calc.add(1, 2)
