@@ -121,7 +121,7 @@ hotel.add_customer(customer2)
 # View available rooms
 available_rooms = hotel.get_available_rooms()
 for room in available_rooms:
-        print(room)
+    print(room)
 
 # Customer makes a reservation
 customer1.make_reservation(room1, "2025-05-01", "2025-05-05")
@@ -137,13 +137,9 @@ hotel.view_all_rooms()
 
 # View all reservations of a customer
 hotel.view_customer_reservations("CUST001")
-```
-
----
-
-## 4. Expected Output
-
-```yaml
+4. Expected Output
+yaml
+Copy
 Room Number: 101, Type: Single, Price per Night: $100, Availability: True
 Room Number: 102, Type: Double, Price per Night: $150, Availability: True
 Room Number: 103, Type: Suite, Price per Night: $250, Availability: True
@@ -155,12 +151,11 @@ Room Number: 102, Type: Double, Price per Night: $150, Availability: True
 Room Number: 103, Type: Suite, Price per Night: $250, Availability: True
 
 No reservation found with ID RES001.
-```
+5. Constraints:
+The system should handle multiple customers and reservations for the same room.
 
----
+A room should only be reserved if it is available for the specified dates.
 
-## 5. Constraints
-- The system should handle multiple customers and reservations for the same room.
-- A room should only be reserved if it is available for the specified dates.
-- Customers can only cancel their own reservations.
-- Implement basic error handling, such as attempting to book a room that is already reserved or canceling a non-existent reservation.
+Customers can only cancel their own reservations.
+
+Implement basic error handling, such as attempting to book a room that is already reserved or canceling a non-existent reservation.
