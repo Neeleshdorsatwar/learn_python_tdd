@@ -1,3 +1,7 @@
+# Assignment 3: Product Catalog and Invoice System
+
+---
+
 # Objective
 
 Your task is to design and implement a system that manages a **Product Catalog** and generates an **Invoice**. The system should allow users to add, view, and search products in a catalog and create invoices for customers by selecting products from the catalog. Each invoice will include product details, quantities, and the total cost.
